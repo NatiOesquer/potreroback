@@ -37,7 +37,7 @@
             <div class="row">
                 <?php
                 // 1) Conexion
-                $conexion = mysqli_connect("127.0.0.1", "root", "");
+                $conexion = mysqli_connect("localhost:3307", "root", "");
                 mysqli_select_db($conexion, "tienda");
                 // 2) Preparar la orden SQL
                 // Sintaxis SQL SELECT
