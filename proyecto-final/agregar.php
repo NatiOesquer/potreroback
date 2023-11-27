@@ -1,3 +1,5 @@
+
+
 <?php
   // 1) Conexion
   // a) realizar la conexion con la bbdd
@@ -26,3 +28,6 @@ VALUES ('','$prenda','$marca','$talle','$precio','$imagen')";
   // a) rederigir a index
   header('location: index.php');
 ?>
+ 
+
+

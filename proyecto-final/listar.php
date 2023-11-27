@@ -20,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" id="nav">Addidas</a>
+            <a class="nav-link active" aria-current="page" href="addidas.php" id="nav">Addidas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="nav">Nike</a>
+            <a class="nav-link" href="nike.php" id="nav">Nike</a>
           </li>
 
         </ul>
