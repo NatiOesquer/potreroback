@@ -17,7 +17,7 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" id="nav">Inicio</a>
+      <a class="navbar-brand" href="index.php" id="nav">Inicio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,16 +27,11 @@
             <a class="nav-link active" aria-current="page" href="addidas.php" id="nav">Addidas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="supreme.php" id="nav">Supreme</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="nike.php" id="nav">Nike</a>
           </li>
 
         </ul>
-        <form class="d-flex">
-          <a href="login.html" id="login">Login</a>
-        </form>
+       
       </div>
     </div>
   </nav>
@@ -46,13 +41,6 @@
     <img src="./assets/img/logo.png" alt="logo" style="height: 300px;">
     <img src="./assets/img/marca.png" alt="marcas" style="height: 320px;">
   </div>
-
-
-
-
-  <h2>Lista de ropa</h2>
-  <p>La siguiente lista muestra los datos de la ropa actualmente en stock.</p>
-
   <section>
     <div class="container">
       <div class="row">
@@ -69,11 +57,11 @@
         // => Selecciona todos los campos de la siguiente tabla
         // SELECT campos_tabla FROM nombre_tabla
         // => Selecciona los siguientes campos de la siguiente tabla
-        $consulta = 'SELECT * FROM ropa';
+        $consulta = "SELECT * FROM ropa WHERE marca='supreme'";
 
         // 3) Ejecutar la orden y obtenemos los registros
         $datos = mysqli_query($conexion, $consulta);
-
+      
         // 4) el while recorre todos los registros y genera una CARD PARA CADA UNA
         while ($reg = mysqli_fetch_array($datos)) { ?>
         
@@ -94,6 +82,8 @@
       </div>
     </div>
   </section>
+
+
   <footer class="foo">
     <div class="footer">
       <p>"Amira NC, tu destino para el rendimiento y estilo deportivo. En nuestra tienda, fusionamos pasión por el deporte con moda y funcionalidad. Descubre una amplia gama de productos de alta calidad, diseñados para potenciar tu rendimiento y realzar tu estilo. Equípate con lo mejor en indumentaria y accesorios deportivos. En Amira NC, nos comprometemos a inspirar y apoyar tu viaje hacia un estilo de vida activo. ¡Eleva tu juego con nosotros!"</p>
